@@ -1,0 +1,13 @@
+<!-- <div>
+  <p>{{name}}</p>
+</div> -->
+<div id="mydiv">
+  <p [style.color]="color">{{name|uppercase}}</p>
+  <p [style.color]="errcolor?'red':'green'">Error</p>
+  <p style="color:brown">{{today|date|lowercase}}</p>
+ </div>
+
+<input type='button' value="ChangeColor"(click)="changeColor()"><br><br>
+<!-- Attribute binding -->
+<p style="color:blueviolet">Attribute Binding</p>
+<img [attr.src]="src1" [attr.width]='width1' alt="">
